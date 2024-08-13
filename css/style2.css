@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+/* メイン */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f8ff; /* 明るい青白の背景色 */
+  color: #333; /* 黒に近いグレーの文字色 */
+}
+
+a {
+  text-decoration: none;
+  color: #1e90ff; /* 青色 */
+}
+
+a:hover {
+  color: #ff4500; /* オレンジ色 */
+  font-weight: bold;
+}
+
+a:hover img {
+  opacity: 0.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ヘッダーのスタイル */
+header {
+  width: 100%;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff; /* 白色 */
+  color: #333; /* 黒に近いグレー */
+  border-bottom: 2px solid #1e90ff; /* 青色のボーダー */
+}
+
+header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #1e90ff, #ff4500); /* 青からオレンジへのグラデーション */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 2px solid #333; /* 黒に近いグレーのボーダー */
+  border-radius: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+header h1:hover {
+  color: #ff4500; /* オレンジ色 */
+  -webkit-text-fill-color: #ff4500;
+  transform: scale(1.1);
+}
+
+#header_contact {
+  float: right;
+  margin: 35px 0 0;
+}
+
+/* グローバルナビゲーションのスタイル */
+#global_navi {
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f8f8f8; /* 明るいグレー */
+}
+
+#global_navi ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#global_navi ul li {
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#global_navi ul li:hover {
+  transform: scale(1.1); /* Enlarge the item on hover */
+}
+
+#global_navi ul li:last-child {
+  margin-right: 0;
+}
+
+#global_navi ul li a {
+  color: #333; /* 黒に近いグレー */
+  text-decoration: none;
+  padding: 10px 15px; /* Add padding to make the clickable area larger */
+  display: inline-block; /* Ensure the a tag respects the padding */
+}
+
+#global_navi ul li a:hover {
+  color: #ff4500; /* オレンジ色 */
+  font-weight: bold;
+}
+
+#global_navi ul li.current a {
+  font-weight: bold;
+}
+
+/* メインコンテンツのスタイル */
+#main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* 縦に配置するための設定 */
+  align-items: stretch; /* 画面幅いっぱいに広げるための設定 */
+}
+
+/* コンテンツエリアのスタイル */
+.content {
+  flex: 1; /* コンテンツ領域を残りのスペースいっぱいに広げる */
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff; /* 白色 */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 軽い影 */
+  transform: translateY(20px); /* Initial position */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation */
+}
+
+.content.visible {
+  opacity: 1; /* Show */
+  transform: translateY(0); /* Move to original position */
+}
+
+/* 見出しのスタイル */
+h2 {
+  padding-top: 60px;
+  margin-top: -60px;
+  color: #1e90ff; /* 青色 */
+}
+
+/* フッターのスタイル */
+footer {
+  background-color: #ffffff; /* 白色 */
+  text-align: center;
+  padding: 10px 0;
+  color: #333; /* 黒に近いグレー */
+}
+
+footer #footer_nav {
+  padding: 10px 0;
+}
+
+footer a:hover {
+  color: #ff4500; /* オレンジ色 */
+}
+
+footer #footer_nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer #footer_nav li {
+  display: inline;
+  margin-left: 8px;
+  padding-left: 8px;
+  font-size: smaller;
+}
+
+footer #footer_nav li a {
+  color: #333; /* 黒に近いグレー */
+}
+
+footer #footer_nav li a:hover {
+  color: #ff4500; /* オレンジ色 */
+}
+
+footer #footer_nav li:last-child {
+  padding: 0 8px;
+}
+
+footer small {
+  display: block;
+  padding: 8px 0;
+  color: #333; /* 黒に近いグレー */
+}
+
+/* 記事のスタイル */
+#article ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#article li {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff; /* 白色 */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 軽い影 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#article li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* 少し大きい影 */
+}
+
+#article h3 {
+  margin: 0 0 10px;
+  color: #1e90ff; /* 青色 */
+}
+
+#article p {
+  margin: 0;
+  color: #333; /* 黒に近いグレー */
+}
+
+/* サイドバーのスタイル */
+.content-container {
+  display: flex;
+  flex-direction: row; /* 横並びにする */
+  width: 100%; /* 親要素が全幅を占める */
+}
+
+.main-content {
+  flex: 3;
+  order: 1; /* メインコンテンツが左側 */
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f5f5; /* 明るいグレー */
+  border-radius: 8px;
+  margin-left: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 軽い影 */
+  order: 2; /* サイドバーが右側 */
+  margin-bottom: 20px;
+  position: sticky;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc; /* 薄いグレー */
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  width: 100%;
+  background-color: #ffffff; /* 白色 */
+  color: #333; /* 黒に近いグレー */
+}
+
+#search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #ccc; /* 薄いグレー */
+  border-left: none;
+  background-color: #ffffff; /* 白色 */
+  color: #333; /* 黒に近いグレー */
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #f0f0f0; /* 少し明るいグレー */
+}
+
+.sidebar h3 {
+  color: #1e90ff; /* 青色 */
+  margin-bottom: 10px;
+}
+
+.sidebar h4 {
+  color: #ff8800; /* オレンジ色 */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #333; /* 黒に近いグレー */
+  transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: #ff4500; /* オレンジ色 */
+}
+
+.sidebar #about #article ul li a {
+  color: #1e90ff; /* 青色 */
+}
+
+.sidebar #about #article ul li a:hover {
+  color: #ff4500; /* オレンジ色 */
+}
+
+.profile-container {
+  margin-bottom: 20px;
+}
+
+.profile-container h3 {
+  color: #1e90ff; /* 青色 */
+  margin-bottom: 10px;
+}
+
+.profile-container p {
+  color: #333; /* 黒に近いグレー */
+}
+
+#search-results {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search-results .result-item {
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff; /* 白色 */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 軽い影 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-results .result-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* 少し大きい影 */
+}
+
+#search-results .result-item h3 {
+  margin: 0 0 10px;
+  color: #1e90ff; /* 青色 */
+}
+
+#search-results .result-item p {
+  margin: 0;
+  color: #333; /* 黒に近いグレー */
+}
+
+#search-results .no-results {
+  color: #333; /* 黒に近いグレー */
+  font-size: 18px;
+}
