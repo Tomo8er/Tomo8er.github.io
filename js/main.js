@@ -1,4 +1,4 @@
-/*document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
   const searchButton = document.getElementById('search-button');
   const searchInput = document.getElementById('search-input');
   const searchResults = document.getElementById('search-results');
@@ -26,6 +26,6 @@
     }
   });
 
-});*/
+});
 
 document.getElementById('current-year').textContent = new Date().getFullYear();
