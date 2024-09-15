@@ -272,6 +272,7 @@ footer small {
 .search-container {
   justify-content: center;
   margin-bottom: 20px;
+  display: flex;
 }
 
 #search-input {
