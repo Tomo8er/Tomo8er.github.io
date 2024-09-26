@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html
+lang="ja"
+dir="ltr">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--SNSogp&twcard-->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://kari/Programs/images/main-visual.jpg">
+    <meta property="og:url" content="http://kari"> 
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@your_twitter_handle">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="Programs/images/main-visual.jpg">
+
+    <link rel="canonical" href="http://kari">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="webclip152.png">
+    <title>根室市観光応援ガイド | 最東端のまちで楽しむ観光</title>
+</head>
+
+<body>
+    <header id="header-placeholder">
+    </header>
+
+    <div id="hamburger_nav">
+        <nav>
+            <div id="close-nav">&times;</div>
+            <ul>
+                <li><a href="sights/index.html">観光名所</a></li>
+                <li><a href="events/index.html">イベント</a></li>
+                <li><a href="access/index.html">アクセス</a></li>
+                <li><a href="features/index.html">特集</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main id="main">
+    </main>
+
+    <footer>
+        <nav id="footer-nav">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="contact/index.html">お問い合わせ</a></li>
+                <li><a href="policy/index.html">プライバシーポリシー</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 根室市観光応援ガイド All Rights Reserved.</p>
+    </footer>
+
+    <!--js-->
+    <script defer src="Programs/js/slide.js"></script>
+    <script defer src="Programs/js/header/js"></script>
+    <!--ハンバーガーメニューの表示プログラム-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('#menu-toggle');
+        const globalNavi = document.querySelector('#hamburger_nav');
+        const closeNav = document.querySelector('#close-nav');
+
+        menuToggle.addEventListener('click', function () {
+            globalNavi.classList.toggle('active');
+        });
+
+        closeNav.addEventListener('click', function () {
+            globalNavi.classList.remove('active');
+        });
+    });
+    </script>
+    <!--Cookieポップアップの終了処理
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookiePopup = document.getElementById('cookie-popup');
+            const acceptCookieButton = document.getElementById('accept-cookie');
+
+            if (!localStorage.getItem('cookieAccepted')) {
+                cookiePopup.style.display = 'flex';
+            }
+
+            acceptCookieButton.addEventListener('click', function() {
+                localStorage.setItem('cookieAccepted', 'true'); 
+                cookiePopup.style.display = 'none';
+            });
+        });
+
+    </script>-->
+<!--Googleアナリティクス-->
+<!--/Googleアナリティクス-->
+
+</body>
+</html>

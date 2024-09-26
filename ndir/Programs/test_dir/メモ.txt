@@ -1,0 +1,4 @@
+1.http://kari
+は実際のURLに変える
+2.https://twitter.com/x?ref_src=twsrc%5Etfw
+のxをアカウントに変える
