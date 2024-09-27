@@ -387,3 +387,44 @@ footer small {
   color: #e0e0e0;
   font-size: 18px;
 }
+
+.install-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+  text-align: center;
+  z-index: 1000;
+}
+
+.install-popup p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.install-popup button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.install-popup button:hover {
+  background-color: #0056b3;
+}
+
+#close-btn {
+  background-color: #6c757d;
+}
+
+#close-btn:hover {
+  background-color: #5a6268;
+}
