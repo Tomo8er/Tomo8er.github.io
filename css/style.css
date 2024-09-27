@@ -402,6 +402,7 @@ footer small {
 }
 
 .install-popup p {
+  color: #333;
   margin: 0;
   font-size: 16px;
 }
