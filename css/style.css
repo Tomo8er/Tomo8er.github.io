@@ -429,3 +429,7 @@ footer small {
 #close-btn:hover {
   background-color: #5a6268;
 }
+
+* {
+  text-align: center;
+}
