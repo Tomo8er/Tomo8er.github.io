@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Worldのサンプル</title>
+    <style>
+        /* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif; /* フォント設定 */
+    line-height: 1.6; /* 行間設定 */
+    margin: 20px; /* ページの余白設定 */
+    background-color: #f9f9f9; /* 背景色設定 */
+}
+
+/* リストのスタイル */
+ul {
+    list-style-type: none; /* デフォルトのリストスタイルを無効化 */
+    padding: 0; /* パディングをリセット */
+}
+
+/* 各リストアイテムのスタイル */
+li {
+    background-color: #fff; /* 背景色設定 */
+    border: 1px solid #ddd; /* ボーダー設定 */
+    border-radius: 5px; /* 角を丸くする */
+    padding: 15px; /* 内側の余白設定 */
+    margin-bottom: 15px; /* 下の余白設定 */
+    transition: box-shadow 0.3s; /* ホバー時の影のトランジション設定 */
+}
+
+li:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ホバー時の影効果 */
+}
+
+/* リンクのスタイル */
+a {
+    text-decoration: none; /* 下線を消す */
+    color: #007BFF; /* リンクの色 */
+    font-weight: bold; /* 太字 */
+}
+
+a:hover {
+    text-decoration: underline; /* ホバー時に下線を追加 */
+}
+
+/* 画像のスタイル */
+img {
+    max-width: 100%; /* 画像を親要素に合わせてサイズ調整 */
+    height: auto; /* アスペクト比を保持 */
+    display: block; /* ブロック要素として表示 */
+    margin-top: 10px; /* 上の余白設定 */
+    margin-bottom: 10px; /* 下の余白設定 */
+}
+
+/* ZIPリンクのスタイル */
+.zip-link {
+    background-color: #28a745; /* 背景色設定 */
+    color: white; /* 文字色 */
+    padding: 10px 15px; /* 内側の余白設定 */
+    border-radius: 5px; /* 角を丸くする */
+    text-align: center; /* テキストを中央揃え */
+    display: inline-block; /* インラインブロックに変更 */
+    margin-top: 10px; /* 上の余白設定 */
+}
+
+.zip-link:hover {
+    background-color: #218838; /* ホバー時の背景色変更 */
+}
+
+    </style>
+</head>
+<body>
+
+<ul>
+    <li><a href="1.cpp">基本的</a><img src="/images/gengoppt/1.png"><br></li>
+    <li><a href="2.cpp">using宣言を使用</a><img src="/images/gengoppt/2.png"><br></li>
+    <li><a href="3.cpp">printfを使用</a><img src="/images/gengoppt/3.png"><br></li>
+    <li><a href="4.cpp">constを使用</a><img src="/images/gengoppt/4.png"><br></li>
+    <li><a href="5.cpp">関数を使う</a><img src="/images/gengoppt/5.png"><br></li>
+    <li><a href="6.cpp">クラスを使う</a><img src="/images/gengoppt/6.png"><br></li>
+    <li><a href="7.cpp">Lambdaを使う</a><img src="/images/gengoppt/7.png"><br></li>
+    <li><a href="8.cpp">マクロを使う</a><img src="/images/gengoppt/8.png"><br></li>
+    <li><a href="9.cpp">std::formatを使う (C++20以降)</a><img src="/images/gengoppt/9.png"><br></li>
+    <li><a href="10.cpp">再帰関数を使う（ちょっとトリッキー）</a><img src="/images/gengoppt/10.png"><br></li>
+    <li><a class="zip-link" href="HelloWorld.zip">詰め合わせのZIP</a></li>
+</ul>
+
+</body>
+</html>
